@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#111113">
+  <script>
+    // The theme picked with the switcher, applied before the page draws.
+    try {
+      var theme = localStorage.getItem("theme");
+      if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+    } catch (error) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@100..900&display=swap">
+  <title>Opisometer</title>
+  <meta name="description" content="Measure distance and area on Apple Maps, along roads, trails and bike routes, for iPhone and iPad.">
+  <meta property="og:title" content="Opisometer">
+  <meta property="og:description" content="Measure distance and area on Apple Maps, along roads, trails and bike routes, for iPhone and iPad.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <script src="theme.js" defer></script>
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>opiso<em>meter</em></span></a>
+      <nav class="nav" aria-label="Pages">
+        <a href="./" aria-current="page">About</a>
+        <a href="support/">Support</a>
+        <a href="privacy/">Privacy</a>
+        <a href="license/">License</a>
+      </nav>
+      <span class="store">App Store · Soon</span>
+      <button class="theme" type="button" hidden><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5V5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero">
+      <div class="hero-rail" aria-hidden="true">
+        <div class="index-card"><b>01</b><span>/ 04</span></div>
+        <div class="vertical">Apple Maps // iOS &amp; iPadOS</div>
+        <div class="year">2026</div>
+      </div>
+
+      <div class="hero-body">
+        <p class="meta-row">
+          <span><b>Distance &amp; area</b> · Measured on Apple Maps</span>
+          <span class="aside">Roads · Trails · Bike routes</span>
+        </p>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="hero-id">
+              <img src="icon.png" alt="Opisometer icon">
+              <div>
+                <span class="store">Coming soon to the App Store</span>
+                <p class="platforms">iPhone · iPad · iOS 26.5 or later</p>
+              </div>
+            </div>
+
+            <h1 class="display">Measure the world <span>from the map.</span></h1>
+
+            <p class="lede">Measure distance and area on Apple Maps, along roads, trails and bike routes, for iPhone and iPad.</p>
+            <p class="sub">Touch and hold to drop points and watch the distance add up, or go straight as the crow flies. Close a loop for the area inside, record a route as you go, and see every climb and descent.</p>
+
+            <div class="actions">
+              <a class="btn btn-primary" href="#screenshots">See screenshots <span aria-hidden="true">↓</span></a>
+              <a class="btn btn-ghost" href="support/">Get support <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <figure class="hero-card">
+            <img src="screenshots/ipad/elevation.jpg" width="960" height="1280" fetchpriority="high" alt="On iPad, a 4.16 km walk around the Three Peaks of Lavaredo on satellite imagery, over its elevation profile: 223 m up, 303 m down, and a steepest grade of 37%">
+            <figcaption>
+              <div>
+                <div class="place">Tre Cime di Lavaredo</div>
+                <div class="title">Around the Three Peaks, on iPad</div>
+              </div>
+              <div class="figure"><b>4.16 km</b><span>Walk · 223 m up</span></div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <p class="tag">02 // About Opisometer</p>
+
+      <div class="about-grid">
+        <div>
+          <h2>The little wheel, <span>reinvented for Apple Maps.</span></h2>
+          <p>An opisometer is the little wheel once rolled along a paper map to measure a route. This one measures on Apple Maps.</p>
+          <p class="fine">Maps, search and routes come from Apple's MapKit. Heights come from the AWS Terrain Tiles and are worked out on your device. Topographic maps of the US come from the U.S. Geological Survey.</p>
+        </div>
+
+        <div>
+          <h3 class="label">What it does</h3>
+          <ol class="capabilities">
+            <li>Measures along roads, trails and bike routes, or in straight lines</li>
+            <li>Closes a loop to find the area inside</li>
+            <li>Records a route as you walk, run or ride</li>
+            <li>Shows every climb and descent, and the steepest grade</li>
+            <li>Draws shaded relief and contour lines anywhere, and topographic maps across the US</li>
+            <li>Looks out from any point in 3D, or raises the ground into a model for your table</li>
+            <li>Saves and compares measurements, and shares them as a picture, a video or a GPX file</li>
+            <li>Counts in kilometers, miles or furlongs</li>
+          </ol>
+        </div>
+
+        <div class="visual">
+          <div>
+            <h3 class="label quiet">Elevation and 3D</h3>
+            <figure class="tile"><img src="screenshots/iphone/elevation.jpg" width="640" height="1391" loading="lazy" alt="The elevation profile of a walk around the Three Peaks of Lavaredo, on iPhone"></figure>
+            <p class="note">Three Peaks of Lavaredo: 236 m up, 308 m down, and a steepest grade of 37%.</p>
+          </div>
+          <p class="stamp">Heights worked out on your device</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="screenshots">
+      <div class="gallery-head">
+        <div>
+          <p class="tag">03 // Screenshots</p>
+          <h2>On iPhone and iPad</h2>
+        </div>
+        <p>Select a screenshot to see it larger.</p>
+      </div>
+
+      <div class="device">
+        <div class="device-head"><h3>iPhone</h3><span>8 screens · iOS 26.5 or later</span></div>
+        <ul class="shots phone">
+          <li><a class="shot" href="screenshots/iphone/roads.jpg">
+            <span class="shot-head"><b>01</b><span>Bolzano</span></span>
+            <span class="frame"><img src="screenshots/iphone/roads.jpg" width="640" height="1391" alt="A 4.09 km drive measured along the hairpins above Bolzano, with each segment's length on the map"></span>
+            <span class="shot-caption">Along the road</span>
+            <span class="shot-sub">4.09 km by car, three points</span>
+          </a></li>
+          <li><a class="shot" href="screenshots/iphone/elevation.jpg">
+            <span class="shot-head"><b>02</b><span>Tre Cime di Lavaredo</span></span>
+            <span class="frame"><img src="screenshots/iphone/elevation.jpg" width="640" height="1391" alt="A 4.18 km walk around the Three Peaks of Lavaredo over its elevation profile: 236 m up, 308 m down, and a steepest grade of 37%"></span>
+            <span class="shot-caption">Every climb</span>
+            <span class="shot-sub">236 m up, steepest grade 37%</span>
+          </a></li>
+          <li><a class="shot" href="screenshots/iphone/area.jpg">
+            <span class="shot-head"><b>03</b><span>Bolzano</span></span>
+            <span class="frame"><img src="screenshots/iphone/area.jpg" width="640" height="1391" alt="A loop around central Bolzano enclosing 12.80 hectares, with a 1.50 km perimeter"></span>
+            <span class="shot-caption">Area</span>
+            <span class="shot-sub">12.80 ha inside a 1.50 km loop</span>
+          </a></li>
+          <li><a class="shot" href="screenshots/iphone/view-from-here.jpg">
+            <span class="shot-head"><b>04</b><span>Tre Cime di Lavaredo</span></span>
+            <span class="frame"><img src="screenshots/iphone/view-from-here.jpg" width="640" height="1391" alt="Looking along a 5.67 km line toward the Three Peaks of Lavaredo, over 3D terrain"></span>
+            <span class="shot-caption">The view from here</span>
+            <span class="shot-sub">5.67 km over 3D terrain</span>
+          </a></li>
+          <li><a class="shot" href="screenshots/iphone/relief.jpg">
+            <span class="shot-head"><b>05</b><span>Grand Canyon</span></span>
+            <span class="frame"><img src="screenshots/iphone/relief.jpg" width="640" height="1391" loading="lazy" alt="A 10.88 mile line across the Grand Canyon on the light map, with shaded relief and contour lines"></span>
+            <span class="shot-caption">Relief and contours</span>
+            <span class="shot-sub">10.88 mi, rim to rim</span>
+          </a></li>
+          <li><a class="shot" href="screenshots/iphone/3d-model.jpg">
+            <span class="shot-head"><b>06</b><span>Grand Canyon</span></span>
+            <span class="frame"><img src="screenshots/iphone/3d-model.jpg" width="640" height="1391" loading="lazy" alt="The ground under a line across the Grand Canyon, raised into a 3D model"></span>
+            <span class="shot-caption">3D model</span>
+            <span class="shot-sub">The ground, raised for your table</span>
+          </a></li>
+          <li><a class="shot" href="screenshots/iphone/topo.jpg">
+            <span class="shot-head"><b>07</b><span>Yosemite Valley</span></span>
+            <span class="frame"><img src="screenshots/iphone/topo.jpg" width="640" height="1391" loading="lazy" alt="An 8.21 mile hike in Yosemite Valley on the USGS topographic map"></span>
+            <span class="shot-caption">Topo maps</span>
+            <span class="shot-sub">8.21 mi on the USGS map</span>
+          </a></li>
+          <li><a class="shot" href="screenshots/iphone/look-around.jpg">
+            <span class="shot-head"><b>08</b><span>Paris</span></span>
+            <span class="frame"><img src="screenshots/iphone/look-around.jpg" width="640" height="1391" loading="lazy" alt="Look Around at street level, 405 m along a 1.41 km route beside the Quai Branly in Paris"></span>
+            <span class="shot-caption">Look Around</span>
+            <span class="shot-sub">Walk the route at street level</span>
+          </a></li>
+        </ul>
+      </div>
+
+      <div class="device">
+        <div class="device-head"><h3>iPad</h3><span>4 screens · iPadOS 26.5 or later</span></div>
+        <ul class="shots tablet">
+          <li><a class="shot" href="screenshots/ipad/segments.jpg">
+            <span class="shot-head"><b>09</b><span>Paris</span></span>
+            <span class="frame"><img src="screenshots/ipad/segments.jpg" width="960" height="1280" loading="lazy" alt="On iPad, a 6.79 km drive across central Paris with its three segments listed: 2.40, 1.97 and 2.42 km"></span>
+            <span class="shot-caption">Every segment</span>
+            <span class="shot-sub">6.79 km by car, in three legs</span>
+          </a></li>
+          <li><a class="shot" href="screenshots/ipad/topo.jpg">
+            <span class="shot-head"><b>10</b><span>Yosemite Valley</span></span>
+            <span class="frame"><img src="screenshots/ipad/topo.jpg" width="960" height="1280" loading="lazy" alt="On iPad, an 11.47 mile walk in Yosemite Valley on the USGS topographic map"></span>
+            <span class="shot-caption">Topo maps</span>
+            <span class="shot-sub">11.47 mi, a 7 hr 22 min walk</span>
+          </a></li>
+          <li><a class="shot" href="screenshots/ipad/area.jpg">
+            <span class="shot-head"><b>11</b><span>Bolzano</span></span>
+            <span class="frame"><img src="screenshots/ipad/area.jpg" width="960" height="1280" loading="lazy" alt="On iPad, a loop in Bolzano on the light map enclosing 43.17 hectares, with a 2.64 km perimeter"></span>
+            <span class="shot-caption">Area</span>
+            <span class="shot-sub">43.17 ha inside a 2.64 km loop</span>
+          </a></li>
+          <li><a class="shot" href="screenshots/ipad/saved.jpg">
+            <span class="shot-head"><b>12</b><span>Paris</span></span>
+            <span class="frame"><img src="screenshots/ipad/saved.jpg" width="960" height="1280" loading="lazy" alt="On iPad, the search panel listing three saved measurements across Paris"></span>
+            <span class="shot-caption">Saved</span>
+            <span class="shot-sub">Keep, compare and share</span>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section end" id="platforms">
+      <p class="tag">04 // Platforms &amp; languages</p>
+
+      <div class="split">
+        <div>
+          <h2 class="col-head">Supported platforms</h2>
+          <ul class="rows">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></svg><span><strong>iPhone</strong><small>iOS 26.5 or later</small></span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M11 18.8h2"/></svg><span><strong>iPad</strong><small>iPadOS 26.5 or later, with keyboard shortcuts</small></span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span><strong>Widgets, Control Center and Siri</strong><small>A Last Measurement widget, Control Center buttons and Siri phrases</small></span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg><span><strong>No account, no ads, no tracking</strong><small>Your measurements stay on your device</small></span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="col-head">Language</h2>
+          <ul class="languages">
+            <li><span class="code" aria-hidden="true">EN</span><span><span class="name">English</span></span></li>
+          </ul>
+          <p class="note">Opisometer is in English. Numbers are written the way your region writes them, so in Germany a distance reads 4,09 km.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="wrap">
+    <footer class="site-footer">
+      <p><span class="mark">opiso<em>meter</em></span><span aria-hidden="true">·</span><span>© 2026 Chris Mahlke</span></p>
+      <nav aria-label="Footer">
+        <a href="./">About</a>
+        <a href="support/">Support</a>
+        <a href="privacy/">Privacy</a>
+        <a href="license/">License</a>
+        <span class="store-link">App Store · Soon</span>
+      </nav>
+    </footer>
+  </div>
+
+  <dialog class="lightbox" aria-labelledby="lightbox-title">
+    <div class="lightbox-panel">
+      <div class="lb-bar lb-top">
+        <p><span class="lb-title" id="lightbox-title"></span><span class="lb-count"></span></p>
+        <button class="lb-close" type="button" autofocus>Close <span aria-hidden="true">✕</span></button>
+      </div>
+      <figure class="lb-figure"><img alt=""></figure>
+      <div class="lb-bar lb-bottom">
+        <button class="lb-nav" type="button" data-step="-1"><span aria-hidden="true">←</span> Prev</button>
+        <span class="lb-sub"></span>
+        <button class="lb-nav" type="button" data-step="1">Next <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#111113">
+  <script>
+    // The theme picked with the switcher, applied before the page draws.
+    try {
+      var theme = localStorage.getItem("theme");
+      if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+    } catch (error) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@100..900&display=swap">
+  <title>Opisometer License</title>
+  <meta name="description" content="Copyright, licenses and credits for Opisometer.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <script src="../theme.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../"><img src="../icon.png" alt=""><span>opiso<em>meter</em></span></a>
+      <nav class="nav" aria-label="Pages">
+        <a href="../">About</a>
+        <a href="../support/">Support</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="./" aria-current="page">License</a>
+      </nav>
+      <span class="store">App Store · Soon</span>
+      <button class="theme" type="button" hidden><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5V5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <article class="doc">
+      <p class="tag">License // Copyright &amp; credits</p>
+      <h1>License</h1>
+      <p class="kicker">Copyright and credits</p>
+
+      <div class="callout">
+        <p class="lede">Opisometer is © 2026 Chris Mahlke. All rights reserved.</p>
+        <p>The app and its source code aren't offered under an open-source license, so no permission is given to copy, modify or redistribute them.</p>
+      </div>
+
+      <h2>Maps and places</h2>
+      <p>Maps, places, search and directions come from Apple Maps, through Apple's MapKit. The Legal link on the map in the app lists Apple's data providers.</p>
+      <p>The Topo (US) map comes from The National Map of the U.S. Geological Survey, in the public domain.</p>
+
+      <h2>Elevation</h2>
+      <p>Elevation, relief, contours and the 3D models come from the <a href="https://registry.opendata.aws/terrain-tiles/">Terrain Tiles</a> made by Mapzen and served free by AWS Open Data. Their sources ask for these credits, which the app also shows under Help, then Map and elevation data:</p>
+      <ul class="credits">
+        <li>Mapzen</li>
+        <li>ArcticDEM terrain data DEM(s) were created from DigitalGlobe, Inc., imagery and funded under National Science Foundation awards 1043681, 1559691, and 1542736</li>
+        <li>Australia terrain data © Commonwealth of Australia (Geoscience Australia) 2017</li>
+        <li>Austria terrain data © offene Daten Österreichs – Digitales Geländemodell (DGM) Österreich</li>
+        <li>Canada terrain data contains information licensed under the Open Government Licence – Canada</li>
+        <li>Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers</li>
+        <li>Global ETOPO1 terrain data U.S. National Oceanic and Atmospheric Administration</li>
+        <li>Mexico terrain data source: INEGI, Continental relief, 2016</li>
+        <li>New Zealand terrain data Copyright 2011 Crown copyright (c) Land Information New Zealand and the New Zealand Government (All rights reserved)</li>
+        <li>Norway terrain data © Kartverket</li>
+        <li>United Kingdom terrain data © Environment Agency copyright and/or database right 2015. All rights reserved</li>
+        <li>United States 3DEP (formerly NED) and global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey</li>
+      </ul>
+
+      <h2>This website</h2>
+      <p>Set in <a href="https://fonts.google.com/specimen/Google+Sans+Flex">Google Sans Flex</a>, designed by Google and licensed under the <a href="https://openfontlicense.org/">SIL Open Font License</a>.</p>
+    </article>
+  </main>
+
+  <div class="wrap">
+    <footer class="site-footer">
+      <p><span class="mark">opiso<em>meter</em></span><span aria-hidden="true">·</span><span>© 2026 Chris Mahlke</span></p>
+      <nav aria-label="Footer">
+        <a href="../">About</a>
+        <a href="../support/">Support</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="./">License</a>
+        <span class="store-link">App Store · Soon</span>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

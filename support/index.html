@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#111113">
+  <script>
+    // The theme picked with the switcher, applied before the page draws.
+    try {
+      var theme = localStorage.getItem("theme");
+      if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+    } catch (error) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@100..900&display=swap">
+  <title>Opisometer Support</title>
+  <meta name="description" content="Help with Opisometer, and how to get in touch.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <script src="../theme.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../"><img src="../icon.png" alt=""><span>opiso<em>meter</em></span></a>
+      <nav class="nav" aria-label="Pages">
+        <a href="../">About</a>
+        <a href="./" aria-current="page">Support</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="../license/">License</a>
+      </nav>
+      <span class="store">App Store · Soon</span>
+      <button class="theme" type="button" hidden><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5V5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <article class="doc">
+      <p class="tag">Support // Help &amp; inquiries</p>
+      <h1>Support</h1>
+      <p class="kicker">Questions, problems and ideas</p>
+
+      <div class="callout">
+        <p class="lede">To report a problem or suggest something, <a href="https://github.com/ChrisMahlke/opisometer/issues">open an issue on GitHub</a> or email <a href="mailto:cmahlke@gmail.com?subject=Opisometer%20support">cmahlke@gmail.com</a>. I read everything.</p>
+        <p>It helps to include your device, its iOS or iPadOS version, roughly where you were measuring, and what you expected to see.</p>
+      </div>
+
+      <h2>Requirements</h2>
+      <ul class="rows">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></svg><span>iPhone or iPad with iOS or iPadOS 26.5 or later</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span>An internet connection for maps, search, routes and elevation</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span>Location access while using the app, to see where you are or record a route (optional)</span></li>
+      </ul>
+
+      <h2>Common questions</h2>
+      <p><strong>How do I add a point?</strong> Touch and hold the map, as you would to drop a pin in Maps. A tap alone adds nothing, so the map stays free to explore. To place a point exactly, turn on the crosshair in the rail, pan the map to aim, then tap Add point.</p>
+      <p><strong>How do I follow roads, trails or bike routes?</strong> Choose Road, Trail, Bike or Straight in the rail on the right before you add a point. To change what one segment follows, tap it or its length.</p>
+      <p><strong>A segment is a dashed straight line.</strong> Apple couldn't find a route for it, often because there's no road or path there, or no connection. Tap the segment to try again, or to measure it some other way.</p>
+      <p><strong>How do I measure an area?</strong> Tap the loop button under the total, or tap the first point and choose Close loop. The total becomes the area inside. Choose the area unit in Settings.</p>
+      <p><strong>How do I record a route?</strong> With your location on, hold the location button in the rail and choose Record Route, or tap "or record a route" under the prompt. The line follows you, even with the screen off, until you tap Stop under the total.</p>
+      <p><strong>Where are my saved measurements?</strong> Tap Save under the total to keep one. Tap the magnifying glass in the rail, with nothing typed, to see what you've saved. Hold one to compare it with the measurement on screen, rename it or delete it.</p>
+      <p><strong>How do I open a GPX or GeoJSON file?</strong> Open it from the search panel, or from Files, Mail or another app, and choose Opisometer.</p>
+      <p><strong>How do I change units?</strong> Tap the units button in the rail to step through kilometers, miles and furlongs. A furlong is an eighth of a mile.</p>
+      <p><strong>Where does the elevation come from?</strong> From the AWS Terrain Tiles, worked out on your device. Opisometer fetches heights by map area, never by the line you draw, and keeps the tiles it has downloaded. Help, then Map and elevation data, lists the sources.</p>
+      <p><strong>The Topo map is blank.</strong> The Topo (US) map comes from the U.S. Geological Survey and covers the United States. Elsewhere, choose another map under Layers, or turn on Relief and Contours, which work worldwide.</p>
+      <p><strong>The map doesn't show where I am.</strong> Opisometer doesn't have your location. Open the Settings app, find Opisometer, and allow location "While Using the App".</p>
+      <p><strong>How do I see everything Opisometer can do?</strong> Tap the info button at the bottom of the rail, then How to use Opisometer. The guide shows every gesture.</p>
+      <p><strong>Widgets, Control Center and Siri.</strong> Add the Last Measurement widget to your Home Screen, or the Record Route and Search Map buttons to Control Center. Ask Siri to "Record a route in Opisometer", "Measure from here in Opisometer" or "Search Opisometer".</p>
+      <p><strong>Keyboard shortcuts on iPad.</strong> With a keyboard attached, hold <kbd>⌘</kbd> to see them all.</p>
+      <p><strong>How do I switch between dark and light?</strong> In Settings, under Appearance, choose Dark, Light or Auto, which follows your device.</p>
+      <p><strong>Which languages does Opisometer speak?</strong> English. Numbers are written the way your region writes them, so in Germany a distance reads 4,09 km.</p>
+      <p><strong>What is an opisometer?</strong> A little wheel on a handle, rolled along a route on a paper map to measure its length. This one does the same on Apple Maps.</p>
+    </article>
+  </main>
+
+  <div class="wrap">
+    <footer class="site-footer">
+      <p><span class="mark">opiso<em>meter</em></span><span aria-hidden="true">·</span><span>© 2026 Chris Mahlke</span></p>
+      <nav aria-label="Footer">
+        <a href="../">About</a>
+        <a href="./">Support</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="../license/">License</a>
+        <span class="store-link">App Store · Soon</span>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

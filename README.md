@@ -8,7 +8,7 @@ Opisometer measures distance and area on Apple Maps. Touch and hold to drop poin
 
 ## Get help
 
-- **Report a bug or request a feature:** [open an issue](https://github.com/ChrisMahlke/opisometer-support/issues/new). Search the [existing issues](https://github.com/ChrisMahlke/opisometer-support/issues) first in case it has already been raised.
+- **Report a bug or request a feature:** [open an issue](https://github.com/ChrisMahlke/opisometer/issues/new). Search the [existing issues](https://github.com/ChrisMahlke/opisometer/issues) first in case it has already been raised.
 - **Email:** [cmahlke@gmail.com](mailto:cmahlke@gmail.com?subject=Opisometer%20support) for anything you would rather not post publicly.
 - **Support page:** [chrismahlke.github.io/opisometer/support](https://chrismahlke.github.io/opisometer/support/) answers the most common questions.
 

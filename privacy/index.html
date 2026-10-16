@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#111113">
+  <script>
+    // The theme picked with the switcher, applied before the page draws.
+    try {
+      var theme = localStorage.getItem("theme");
+      if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+    } catch (error) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@100..900&display=swap">
+  <title>Opisometer Privacy Policy</title>
+  <meta name="description" content="What Opisometer does with information on your iPhone and iPad.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <script src="../theme.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../"><img src="../icon.png" alt=""><span>opiso<em>meter</em></span></a>
+      <nav class="nav" aria-label="Pages">
+        <a href="../">About</a>
+        <a href="../support/">Support</a>
+        <a href="./" aria-current="page">Privacy</a>
+        <a href="../license/">License</a>
+      </nav>
+      <span class="store">App Store · Soon</span>
+      <button class="theme" type="button" hidden><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5V5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <article class="doc">
+      <p class="tag">Privacy // Policy</p>
+      <h1>Privacy Policy</h1>
+      <p class="kicker">Effective 7 October 2026</p>
+
+      <div class="callout">
+        <p class="lede">Opisometer is made by Chris Mahlke. This policy explains what Opisometer does with information on your iPhone and iPad.</p>
+        <p>The short version: Opisometer has no accounts, no ads, no analytics and no server of its own, and I never receive any information about you. Maps, search and routes come from Apple. Heights come from free terrain tiles on Amazon Web Services and are worked out on your device. The optional Topo (US) map comes from the U.S. Geological Survey.</p>
+      </div>
+
+      <h2>What Opisometer uses, and where it stays</h2>
+      <p><strong>Your location.</strong> If you allow it, Opisometer uses your device's location while the app is open, to show where you are on the map, to center the map on you, and to show which way you're facing. If you put a point where you stand, with Measure from Here or by touching and holding your own location, that point becomes part of your measurement like any other. In Road, Trail and Bike modes it is sent to Apple's Maps service to find the route, as described below.</p>
+      <p><strong>Recording a route.</strong> If you record a route, Opisometer keeps receiving your location while the recording runs, including with the screen off or another app open, and draws the route you take. It stops when you stop the recording. Recorded routes stay on your device.</p>
+      <p><strong>Camera.</strong> Opisometer uses the camera only while you view a 3D model on a table or your points in the street, in augmented reality. Nothing the camera sees is recorded, saved or sent anywhere.</p>
+      <p><strong>Motion.</strong> While a route is recording, Opisometer reads your device's barometer to count how much you climb. The readings stay on your device.</p>
+      <p><strong>Your measurements.</strong> The points you place, your measurements and the measurements you save stay on your device. The measurement on screen is kept so it's still there the next time you open the app. The name and total of your most recently saved measurement are shared with Opisometer's widget, on your device.</p>
+      <p><strong>Files you open.</strong> GPX and GeoJSON files you open in Opisometer are read on your device and not sent anywhere.</p>
+      <p><strong>Settings.</strong> Your settings, the map's last position and your chosen snap mode are saved on your device only.</p>
+      <p><strong>Sharing.</strong> When you share an image, a flyover or orbit video, a GPX file or a total, it goes only where you choose in the share sheet. A video is recorded on your device with iOS's screen recording, which asks your permission first. A 3D model is built on your device and stays there.</p>
+      <p><strong>Siri and Shortcuts.</strong> Requests from Siri and Shortcuts are handled on your device. Measuring to a place by name searches Apple's Maps service for that place, as search does.</p>
+
+      <h2>Information that leaves your device</h2>
+      <p><strong>Maps, search and routes (Apple).</strong> Opisometer draws its maps with Apple's MapKit, which loads map data for the area on screen from Apple. Some features also send points or text to Apple's Maps service:</p>
+      <ul>
+        <li>In Road, Trail and Bike modes, the two ends of each segment, so the line can follow roads, paths or bike routes. Measuring in straight lines sends nothing.</li>
+        <li>When you share, save or export a measurement, its start and end points, to look up the names of the places there.</li>
+        <li>What you type into search, with the area the map is showing, to suggest places. A coordinate you type is read on your device and sends nothing.</li>
+        <li>Look Around asks Apple for street-level imagery of the point you've selected, or of each spot along the line as you walk it.</li>
+        <li>Directions in Maps hands the point to the Apple Maps app.</li>
+        <li>See in AR, which places your points in the street through the camera, lets Apple's ARKit use your location to download Apple's street imagery for the area around you and match it to what the camera sees. This happens only while that view is open.</li>
+      </ul>
+      <p>Apple handles these requests under the <a href="https://www.apple.com/legal/privacy/data/en/apple-maps/">Apple Maps privacy notice</a> and <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. Opisometer doesn't send your location to anyone but Apple, and only for the purposes above.</p>
+      <p><strong>Elevation, relief and contours (Amazon Web Services).</strong> The elevation profile, steepness shading, line of sight, 3D models and the Relief and Contours layers use terrain tiles from the AWS Terrain Tiles dataset, served free by Amazon Web Services' Open Data program. Opisometer downloads the tiles that cover the area it needs and works out heights on your device: <strong>the line you measure is never sent</strong>. Like any website, Amazon Web Services receives your device's IP address and the tiles requested, which show roughly which area you're looking at; <a href="https://aws.amazon.com/privacy/">Amazon's privacy notice</a> applies to those requests. Downloaded tiles are kept on your device so they needn't be fetched again.</p>
+      <p><strong>Topo (US) map (U.S. Geological Survey).</strong> If you choose the Topo (US) map, its tiles for the area on screen are loaded from The National Map, run by the U.S. Geological Survey. Like any website, USGS receives your device's IP address and the tiles requested; the U.S. Geological Survey's own policies apply to those requests.</p>
+      <p>Nothing else leaves your device. Opisometer contains no third-party analytics, advertising or tracking code, uses no third-party code that collects data, and does not share or sell any information.</p>
+
+      <h2>Children</h2>
+      <p>Opisometer doesn't knowingly collect personal information from anyone, including children.</p>
+
+      <h2>Deleting your information</h2>
+      <p>Everything Opisometer stores is on your device. You can delete a saved measurement from the saved list under Search, and deleting the app deletes everything, along with its widget. You can also turn off location access at any time in the Settings app.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy: email <a href="mailto:cmahlke@gmail.com?subject=Opisometer%20privacy">cmahlke@gmail.com</a>.</p>
+    </article>
+  </main>
+
+  <div class="wrap">
+    <footer class="site-footer">
+      <p><span class="mark">opiso<em>meter</em></span><span aria-hidden="true">·</span><span>© 2026 Chris Mahlke</span></p>
+      <nav aria-label="Footer">
+        <a href="../">About</a>
+        <a href="../support/">Support</a>
+        <a href="./">Privacy</a>
+        <a href="../license/">License</a>
+        <span class="store-link">App Store · Soon</span>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
